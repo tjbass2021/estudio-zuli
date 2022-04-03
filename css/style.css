@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #6fadaa;
+    width: 100%;
+    /* padding: 0px 150px; */
+}
+
+/*CABEÇALHO*/
+
+.cabecalho {
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+    
+}
+
+.logo h1{
+    color: #fee4bf;
+}
+
+.menu a {
+    /* margin-left: 3px; */
+    text-decoration: none;
+    color: #fee4bf;
+    padding: 5px 20px;
+}
+
+.menu a:last-child{
+    border: 1px solid #fee4bf;
+    border-radius: 30px;
+}
+
+/*-----------------------------------*/
