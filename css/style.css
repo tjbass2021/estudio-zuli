@@ -9,6 +9,8 @@ body {
 }
 
 .container {
+    position: fixed;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,6 +48,17 @@ body {
 .menu a:last-child{
     border: 1px solid #fee4bf;
     border-radius: 30px;
+    transition: 0.3s;
+}
+
+.menu a:last-child:hover {
+    background-color: #fee4bf;
+    color:#6fadaa;
+    transition: 0.3s;
+}
+
+.menu a:not(a:last-child):hover{
+    color: #ea877d;
 }
 
 /*-----------------------------------*/
@@ -68,19 +81,19 @@ body {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    padding-top: 50px;
+    padding-top: 120px;
 }
 
 .projeto {
-    width: 450px;
+    width: 420px;
     height: 500px;
-    margin: 10px;
+    margin: 10px 20px;
 }
 
 .box {
     position: relative;
-    width: 450px;
-    height: 450px;
+    width: 420px;
+    height: 420px;
     margin-bottom: 20px;
     
 }
@@ -89,14 +102,20 @@ body {
     opacity: 1;
 }
 
+.box:hover > .imagem-projeto {
+    filter: blur(3px)
+}
+
 .imagem-projeto {
     position: absolute;
-    width: 450px;
-    height: 450px;
+    width: 420px;
+    height: 420px;
     z-index: 1;
+    transition: 0.5s;
 }
 
 .texto {
+    text-align: center;
     transition: 0.3s;
     opacity: 0;
     position: absolute;
@@ -108,9 +127,17 @@ body {
 
 .descricao {
     width: 400px;
+    padding: 10px;
+}
+
+.titulo {
+    margin-bottom: 20px;
 }
 
 .projeto a {
     text-decoration: none;
     color: black;
+    padding: 5px 20px;
+    border-radius: 30px;
+    background-color: white;
 }
