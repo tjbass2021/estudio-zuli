@@ -11,6 +11,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #6fadaa;
     width: 100%;
     /* padding: 0px 150px; */
@@ -22,9 +23,12 @@ body {
     
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 0px;
+    width: 100%;
+    max-width: 940px;
+    min-width: 939px;
     
 }
 
@@ -45,3 +49,68 @@ body {
 }
 
 /*-----------------------------------*/
+
+/*SEÇÕES*/
+
+.container-secoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/*SEÇÃO DE PROJETOS*/
+
+.projetos {
+    width: 100%;
+    max-width: 940px;
+    min-width: 939px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding-top: 50px;
+}
+
+.projeto {
+    width: 450px;
+    height: 500px;
+    margin: 10px;
+}
+
+.box {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    margin-bottom: 20px;
+    
+}
+
+.box:hover > .texto {
+    opacity: 1;
+}
+
+.imagem-projeto {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    z-index: 1;
+}
+
+.texto {
+    transition: 0.3s;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    bottom: 100px;
+    padding: 10px;
+}
+
+.descricao {
+    width: 400px;
+}
+
+.projeto a {
+    text-decoration: none;
+    color: black;
+}
