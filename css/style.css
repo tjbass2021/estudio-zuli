@@ -46,9 +46,11 @@ body {
 
 .menu a {
     /* margin-left: 3px; */
+    transition: 0.3s;
     text-decoration: none;
     color: var(--laranjinha);
     padding: 5px 20px;
+    
 }
 
 .menu a:last-child{
@@ -64,7 +66,9 @@ body {
 }
 
 .menu a:not(a:last-child):hover{
-    color: var(--vermelho);
+    transition: 0.3s;
+    border-bottom: 1px solid var(--laranjinha);
+    
 }
 
 /*-----------------------------------*/
@@ -274,4 +278,37 @@ body {
     color: var(--vermelho);
     font-size: 25px;
     
+}
+
+/*------------------------------*/
+
+/*FOOTER*/
+
+.rodape {
+    background-color: var(--azul);
+    color: var(--laranjinha);
+    
+}
+
+.rodape .centralizador .caixa-rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    padding-top: 30px;
+}
+
+.rodape .centralizador .caixa-rodape .logo {
+    text-align: center;
+}
+
+.rodape .centralizador .caixa-rodape .logo img {
+    width: 100px;
+    border-radius: 100%;
+}
+
+.desenvolvedor a{
+    text-decoration: none;
+    color: var(--laranjinha)
 }
