@@ -174,12 +174,16 @@ body {
     color: var(--laranjinha);
 }
 
+
 .caixa {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
+.sobre .centralizador .caixa {
+    padding-bottom: 40px;
+}
 .caixa .descricao{
     color: var(--laranjinha);
 }
@@ -187,9 +191,12 @@ body {
 .caixa .caixa-interna {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding-top: 40px;
 }
 
+.sobre .centralizador .caixa .caixa-interna .redes {
+    margin-top: 15px;
+}
 
 .caixa img{
     width: 400px;
@@ -212,8 +219,59 @@ body {
 
 .contato .titulo {
     color: var(--vermelho);
+    width: 150px;
 }
 
 .contato .caixa .descricao {
+    font-size: 30px;
     color: var(--vermelho);
+}
+.contato .centralizador {
+    height: 450px;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+
+.contato .centralizador .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 20px;
+}
+
+.contato .centralizador .caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+}
+
+.contato .centralizador .caixa .botao {
+    text-decoration: none;
+    text-align: center;
+    color: var(--vermelho);
+    padding: 5px 20px;
+    border: 1px solid var(--vermelho);
+    border-radius: 30px;
+    transition: 0.3s;
+    width: 150px;
+}
+
+.contato .centralizador .caixa .botao:hover {
+    background-color: var(--vermelho);
+    color: white;
+    transition: 0.3s;
+}
+
+.contato .centralizador .caixa2 {
+    margin-left: 15px;
+}
+
+.contato .centralizador .caixa2 a{
+    text-decoration: none;
+    color: var(--vermelho);
+    font-size: 25px;
+    
 }
