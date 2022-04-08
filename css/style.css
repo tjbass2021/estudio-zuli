@@ -1,3 +1,9 @@
+:root {
+    --laranjinha: #fee4bf;
+    --azul: #6fadaa;
+    --vermelho: #ea877d;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #6fadaa;
+    background-color: var(--azul);
     width: 100%;
     /* padding: 0px 150px; */
 }
@@ -35,35 +41,44 @@ body {
 }
 
 .logo h1{
-    color: #fee4bf;
+    color: var(--laranjinha);
 }
 
 .menu a {
     /* margin-left: 3px; */
     text-decoration: none;
-    color: #fee4bf;
+    color: var(--laranjinha);
     padding: 5px 20px;
 }
 
 .menu a:last-child{
-    border: 1px solid #fee4bf;
+    border: 1px solid var(--laranjinha);
     border-radius: 30px;
     transition: 0.3s;
 }
 
 .menu a:last-child:hover {
-    background-color: #fee4bf;
-    color:#6fadaa;
+    background-color: var(--laranjinha);
+    color:var(--azul);
     transition: 0.3s;
 }
 
 .menu a:not(a:last-child):hover{
-    color: #ea877d;
+    color: var(--vermelho);
 }
 
 /*-----------------------------------*/
 
 /*SEÇÕES*/
+
+.centralizador {
+    display: flex;
+    flex-flow: column;
+    padding: 20px 0px;
+    width: 100%;
+    max-width: 940px;
+    min-width: 939px;
+}
 
 .container-secoes {
     display: flex;
@@ -140,4 +155,123 @@ body {
     padding: 5px 20px;
     border-radius: 30px;
     background-color: white;
+}
+
+/*SEÇÃO SOBRE*/
+
+.secao {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--azul);
+    width: 100%;
+    height: auto;
+}
+
+.secao .titulo{
+    align-self: flex-start;
+    color: var(--laranjinha);
+}
+
+
+.caixa {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.sobre .centralizador .caixa {
+    padding-bottom: 40px;
+}
+.caixa .descricao{
+    color: var(--laranjinha);
+}
+
+.caixa .caixa-interna {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.sobre .centralizador .caixa .caixa-interna .redes {
+    margin-top: 15px;
+}
+
+.caixa img{
+    width: 400px;
+}
+
+.redes a{
+    color: var(--laranjinha);
+    margin: 0 15px;
+}
+
+.redes a i{
+    font-size: 50px;
+}
+
+/*SEÇÃO CONTATO*/
+
+.contato {
+    background-color: white;
+}
+
+.contato .titulo {
+    color: var(--vermelho);
+    width: 150px;
+}
+
+.contato .caixa .descricao {
+    font-size: 30px;
+    color: var(--vermelho);
+}
+.contato .centralizador {
+    height: 450px;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+
+.contato .centralizador .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 20px;
+}
+
+.contato .centralizador .caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+}
+
+.contato .centralizador .caixa .botao {
+    text-decoration: none;
+    text-align: center;
+    color: var(--vermelho);
+    padding: 5px 20px;
+    border: 1px solid var(--vermelho);
+    border-radius: 30px;
+    transition: 0.3s;
+    width: 150px;
+}
+
+.contato .centralizador .caixa .botao:hover {
+    background-color: var(--vermelho);
+    color: white;
+    transition: 0.3s;
+}
+
+.contato .centralizador .caixa2 {
+    margin-left: 15px;
+}
+
+.contato .centralizador .caixa2 a{
+    text-decoration: none;
+    color: var(--vermelho);
+    font-size: 25px;
+    
 }
