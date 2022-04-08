@@ -275,3 +275,31 @@ body {
     font-size: 25px;
     
 }
+
+/*------------------------------*/
+
+/*FOOTER*/
+
+.rodape {
+    background-color: var(--azul);
+    color: var(--laranjinha);
+    
+}
+
+.rodape .centralizador .caixa-rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    padding-top: 30px;
+}
+
+.rodape .centralizador .caixa-rodape .logo {
+    text-align: center;
+}
+
+.rodape .centralizador .caixa-rodape .logo img {
+    width: 100px;
+    border-radius: 100%;
+}
