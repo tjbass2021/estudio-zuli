@@ -1,0 +1,26 @@
+@media screen and (max-width: 939px){
+    .centralizador {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .cabecalho {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        padding: 20px;
+    }
+
+    .projetos {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 799px){
+    .caixa-interna {
+        padding-bottom: 20px;
+    }
+}

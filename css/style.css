@@ -36,7 +36,7 @@ body {
     padding: 20px 0px;
     width: 100%;
     max-width: 940px;
-    min-width: 939px;
+    min-width: 940px;
     
 }
 
@@ -81,7 +81,7 @@ body {
     padding: 20px 0px;
     width: 100%;
     max-width: 940px;
-    min-width: 939px;
+    min-width: 940px;
 }
 
 .container-secoes {
@@ -136,9 +136,6 @@ body {
     opacity: 1;
 }
 
-/* .box:hover > .imagem-projeto {
-    filter: blur(3px)
-} */
 
 .box:hover::before{
     opacity: 0.8;
@@ -261,7 +258,7 @@ body {
     color: var(--vermelho);
 }
 .contato .centralizador {
-    height: 450px;
+    height: auto;
     flex-flow: column;
     justify-content: flex-start;
 }
@@ -270,6 +267,7 @@ body {
 .contato .centralizador .wrapper {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     width: 100%;
     padding: 20px;
 }
