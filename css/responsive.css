@@ -17,6 +17,14 @@
         min-width: 100%;
     }
 
+    .menu2 {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 799px){

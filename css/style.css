@@ -14,6 +14,14 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+.visivel{
+    display: block !important;
+}
+
+.invisivel{
+    display: none;
+}
+
 .container {
     position: fixed;
     z-index: 5;
@@ -37,6 +45,7 @@ body {
     width: 100%;
     max-width: 940px;
     min-width: 940px;
+    transition: .3s;
     
 }
 
@@ -69,6 +78,53 @@ body {
     transition: 0.3s;
     border-bottom: 1px solid var(--laranjinha);
     
+}
+
+.menu2{
+    display: none;
+    transition: 0.3s;
+}
+
+.menu-hamburguer {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 20px;
+    width: 64px;
+    height: 64px;
+}
+
+.menu-hamburguer i{
+    color: var(--laranjinha);
+    font-size: 30px;
+}
+
+.menu-oculto {
+    display: none;
+}
+
+
+.menu-oculto li {
+    list-style: none;
+    margin: 20px;
+}
+
+.menu-oculto li a {
+    text-decoration: none;
+    color: var(--laranjinha);
+    padding: 5px 20px;
+}
+
+.orcamento {
+    border: 1px solid var(--laranjinha);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.orcamento:hover {
+    background-color: var(--laranjinha);
+    color:var(--azul);
+    transition: 0.3s;
 }
 
 /*-----------------------------------*/
