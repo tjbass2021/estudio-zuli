@@ -72,7 +72,9 @@ body {
     padding: 5px 20px;
     
 }
-
+.orcamento-topo{
+    margin-left: 20px;
+}
 .menu a:last-child{
     border: 1px solid var(--laranjinha);
     border-radius: 30px;
@@ -172,8 +174,8 @@ body {
 
 .projeto {
     width: 420px;
-    height: 500px;
-    margin: 10px 20px;
+    height: auto;
+    margin: 20px;
 }
 
 .box {
@@ -194,7 +196,7 @@ body {
     width: 100px;
     display: block;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.5s;
     background-color: var(--azul);
     z-index: 2;
 }
@@ -206,7 +208,7 @@ body {
 
 .box:hover::before{
     opacity: 0.8;
-    transition: 0.3s;
+    transition: 0.5s;
     width: 420px;
     height: 420px;
     z-index: 2;
@@ -323,6 +325,13 @@ body {
 .contato .caixa .descricao {
     font-size: 30px;
     color: var(--vermelho);
+    padding: 0;
+    /* background-color: #6fadaa; */
+    /* margin-bottom: 5px; */
+}
+
+.texto-contato {
+    margin-bottom: 10px;
 }
 .contato .centralizador {
     height: auto;
@@ -336,6 +345,10 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     width: 100%;
+    padding: 20px;
+}
+
+.contato .centralizador .wrapper .caixa:last-child{
     padding: 20px;
 }
 
@@ -356,6 +369,7 @@ body {
     border-radius: 30px;
     transition: 0.3s;
     width: 150px;
+    margin-bottom: 20px;
 }
 
 .contato .centralizador .caixa .botao:hover {
@@ -364,14 +378,11 @@ body {
     transition: 0.3s;
 }
 
-.contato .centralizador .caixa2 {
-    margin-left: 15px;
-}
 
 .contato .centralizador .caixa2 a{
     text-decoration: none;
     color: var(--vermelho);
-    font-size: 25px;
+    font-size: 15px;
     
 }
 

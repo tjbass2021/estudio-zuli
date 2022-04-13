@@ -26,6 +26,15 @@
         display: none;
     }
 
+    .contato .centralizador .wrapper .caixa:first-child {
+        height: auto;
+    }
+
+    .contato .centralizador .wrapper .caixa:last-child{
+        padding-left: 50px;
+        height: auto;
+    }
+
 }
 
 @media screen and (max-width: 799px){
@@ -70,11 +79,28 @@
     .logo h1 {
         display: none;
     }
+
+    .contato .centralizador .wrapper .caixa:first-child {
+        height: auto;
+    }
+
+    .contato .centralizador .wrapper .caixa:last-child{
+        padding-left: 50px;
+        height: auto;
+    }
 }
 
-/* @media screen and (max-width: 290px){
-    .imagem-sobre {
-        width: 270px !important;
-        height: auto !important;
+@media screen and (max-width: 290px){
+    .contato .centralizador .wrapper .caixa .texto-contato .descricao{
+        font-size: 25px;
     }
-} */
+
+    .contato .centralizador .wrapper .caixa:last-child{
+        padding-left: 70px;
+        height: auto;
+    }
+
+    .desenvolvedor h4{
+        font-size: 10px;
+    }
+}
