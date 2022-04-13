@@ -49,6 +49,17 @@ body {
     
 }
 
+.logo {
+    display: flex;
+}
+
+.logo img {
+    display: none;
+    margin-right: 5px;
+    width: 45px;
+    border-radius: 100%;
+}
+
 .logo h1{
     color: var(--laranjinha);
 }
@@ -383,11 +394,11 @@ body {
     padding-top: 30px;
 }
 
-.rodape .centralizador .caixa-rodape .logo {
+.rodape .centralizador .caixa-rodape .logo-rodape {
     text-align: center;
 }
 
-.rodape .centralizador .caixa-rodape .logo img {
+.rodape .centralizador .caixa-rodape .logo-rodape img {
     width: 100px;
     border-radius: 100%;
 }

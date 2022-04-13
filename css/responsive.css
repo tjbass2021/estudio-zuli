@@ -9,7 +9,8 @@
         width: 100%;
         max-width: 100%;
         min-width: 100%;
-        padding: 20px;
+        padding: 5px 20px;
+        justify-content: space-between;
     }
 
     .projetos {
@@ -32,3 +33,48 @@
         padding-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 440px){
+    /*Criei isto aqui para corrigir por enquanto a questão do tamanho das laterais
+    pois as divs não estavam respeitando a largura da tela em razão de algo que ainda
+    não consegui identificar*/
+    section, header{
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+    .caixa-interna, .projeto,
+    .box, .caixa .container, .descricao, .texto{
+        width: 100vw;
+        
+    }
+
+    .imagem-projeto, .imagem-sobre {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .box:hover::before{
+        opacity: 0.8;
+        transition: 0.3s;
+        width: 100%;
+        height: 420px;
+        z-index: 2;
+    }
+
+    .logo img {
+        display: block;
+    }
+
+    .logo h1 {
+        display: none;
+    }
+}
+
+/* @media screen and (max-width: 290px){
+    .imagem-sobre {
+        width: 270px !important;
+        height: auto !important;
+    }
+} */
