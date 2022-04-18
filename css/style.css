@@ -51,12 +51,13 @@ body {
 
 .logo {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo img {
-    display: none;
     margin-right: 5px;
-    width: 45px;
+    width: 35px;
     border-radius: 100%;
 }
 
@@ -189,30 +190,6 @@ body {
     
 }
 
-.box::before {
-    content: "";
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    display: block;
-    opacity: 0;
-    transition: 0.5s;
-    background-color: var(--azul);
-    z-index: 2;
-}
-
-.box:hover > .texto {
-    opacity: 1;
-}
-
-
-.box:hover::before{
-    opacity: 0.8;
-    transition: 0.5s;
-    width: 420px;
-    height: 420px;
-    z-index: 2;
-}
 
 .imagem-projeto {
     position: absolute;
@@ -233,13 +210,19 @@ body {
     padding: 10px;
 }
 
+.texto-mobile {
+    padding: 20px;
+}
+
 .descricao {
     width: 400px;
     padding: 10px;
+    margin-bottom: 20px;
+    
 }
 
 .titulo {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .projeto a {
@@ -292,14 +275,21 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 40px;
+    width: 400px;
 }
 
 .sobre .centralizador .caixa .caixa-interna .redes {
     margin-top: 15px;
 }
 
-.caixa img{
-    width: 400px;
+.caixa-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-interna img{
+    width: 300px;
 }
 
 .redes a{

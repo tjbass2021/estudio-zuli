@@ -35,11 +35,69 @@
         height: auto;
     }
 
+    .caixa {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .caixa-interna {
+        width: 100%;
+    }
+
+    .texto {
+        display: none;
+    }
+
+    .texto-mobile .descricao {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 939px){
+    .box::before {
+        content: "";
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        display: block;
+        opacity: 0;
+        transition: 0.5s;
+        background-color: var(--azul);
+        z-index: 2;
+    }
+
+    .box:hover::before{
+        opacity: 0.8;
+        transition: 0.5s;
+        width: 420px;
+        height: 420px;
+        z-index: 2;
+    }
+
+    .box:hover > .texto {
+        opacity: 1;
+    }
+
+    .texto-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 836px){
+    .contato .descricao {
+        margin: 0;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 799px){
     .caixa-interna {
         padding-bottom: 20px;
+    }
+
+    .caixa-interna img {
+        width: 300px;
     }
 }
 
@@ -59,7 +117,7 @@
         
     }
 
-    .imagem-projeto, .imagem-sobre {
+    .imagem-projeto {
         width: 100% !important;
         height: auto !important;
     }
