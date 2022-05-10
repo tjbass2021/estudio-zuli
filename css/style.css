@@ -2,6 +2,7 @@
     --laranjinha: #fee4bf;
     --azul: #6fadaa;
     --vermelho: #ea877d;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -36,7 +37,7 @@ body {
 /*CABEÇALHO*/
 
 .cabecalho {
-    
+
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -46,7 +47,7 @@ body {
     max-width: 940px;
     min-width: 940px;
     transition: .3s;
-    
+
 }
 
 .logo {
@@ -71,7 +72,7 @@ body {
     text-decoration: none;
     color: var(--laranjinha);
     padding: 5px 20px;
-    
+
 }
 .orcamento-topo{
     margin-left: 20px;
@@ -91,7 +92,7 @@ body {
 .menu a:not(a:last-child):hover{
     transition: 0.3s;
     border-bottom: 1px solid var(--laranjinha);
-    
+
 }
 
 .menu2{
@@ -187,7 +188,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
@@ -218,7 +219,7 @@ body {
     width: 400px;
     padding: 10px;
     margin-bottom: 20px;
-    
+
 }
 
 .titulo {
@@ -373,7 +374,7 @@ body {
     text-decoration: none;
     color: var(--vermelho);
     font-size: 15px;
-    
+
 }
 
 /*------------------------------*/
@@ -383,7 +384,7 @@ body {
 .rodape {
     background-color: var(--azul);
     color: var(--laranjinha);
-    
+
 }
 
 .rodape .centralizador .caixa-rodape {
