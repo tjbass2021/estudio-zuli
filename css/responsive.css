@@ -105,7 +105,7 @@
     /*Criei isto aqui para corrigir por enquanto a questão do tamanho das laterais
     pois as divs não estavam respeitando a largura da tela em razão de algo que ainda
     não consegui identificar*/
-    section, header{
+    section{
         width: 100%;
         overflow: hidden;
     }
@@ -114,7 +114,7 @@
     .caixa-interna, .projeto,
     .box, .caixa .container, .descricao, .texto{
         width: 100vw;
-        
+
     }
 
     .imagem-projeto {
