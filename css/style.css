@@ -109,9 +109,6 @@ body {
     height: 64px;
 }
 
-.menu2 {
-    position: relative;
-}
 
 .menu-hamburguer i, .exit i{
     color: var(--laranjinha);
@@ -132,7 +129,7 @@ body {
 
 .menu-oculto {
     position: fixed;
-    top: 52px;
+    top: 50px;
     right: 0;
     background-color: var(--azul);
     display: block;
